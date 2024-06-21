@@ -36,33 +36,17 @@
     </div>
     <main>
         <h3 class="titulo-principal">A melhor pizza da região!</h3>
-        <div id="mygallery">
+    
             <div class="galeria">
                 <img src="imagens/calabreza.jpg" alt="Calabresa" >
                 <img src="imagens/portuguesa.jpg" alt="Portuguesa" >
                 <img src="imagens/siciliana.jpg" alt="Siciliana"  >
+                <img src="imagens/pizza08.jpg" alt="uma pizza">
+                <img src="imagens/pizza09.jpg" alt="uma pizza">
             </div>
+        
 
-            <div class="galeria">
-                 <img src="imagens/pizza01.jpg" alt="Pizza01"  >
-                <img src="imagens/pizza02.jpg" alt="Pizza02" >
-                <img src="imagens/pizza03.jpg" alt="Pizza03">
-            </div>
-            <br>
-
-            <div class="galeria">
-                <img src="imagens/pizza04.jpg" alt="Pizza04" >
-                <img src="imagens/pizza05.jpg" alt="Pizza05">
-                <img src="imagens/pizza07.jpg" alt="Pizza07" >
-            </div>
-            <div class="galeria">
-                <img src="imagens/pizza08.jpg" alt="Pizza04" >
-                <img src="imagens/pizza10.jpg" alt="Pizza05">
-                <img src="imagens/pizza09.jpg" alt="Pizza07" >
-            </div>
-
-
-        </div>
+      
 
         <div class="nossos-sabores">
             <h4 class="subtitulo-principal">Nossos Sabores</h4>
@@ -106,13 +90,12 @@
 
     <script src="jquery-1.11.0.min.js"></script>
     <script src="slick-1.8.1/slick/slick.js"></script>
-    <script src="justifiedGallery.min/jquery.justifiedGallery.min.js"></script>
 
     <script>
 
         $('.galeria').slick({
             infinte: true,
-            slidesToShow: 2,
+            slidesToShow: 3,
             slidesToScroll: 1
 
         })
@@ -122,8 +105,6 @@
             arrows: false,
             autoplaySpeed: 2000
         })
-
-        $('#mygallery').justifiedGallery()
 
 
 

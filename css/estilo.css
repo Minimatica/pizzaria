@@ -192,7 +192,9 @@ button{
 
 .galeria{
     
-    width:250px;
-    height: 95px;
+    width:100%;
+    margin-bottom: 80px;
+    height: 180px;
     
+
 }
