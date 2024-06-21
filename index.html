@@ -5,7 +5,11 @@
     <title>Super Pizza</title>
     <meta charset="utf-8">
     <link href="css/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="justifiedGallery.min/justifiedGallery.min.css" />
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
     <link href="css/estilo.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -21,21 +25,43 @@
         </ul>
     </nav>
     <div class="banner">
-        <img src="banners/pizza02.jpg" alt="banner01">
+        <div> <img src="banners/pizza01.jpg" alt="uma pizza"></div>
+        <div> <img src="banners/pizza02.jpg" alt="uma pizaa"></div>
+        <div> <img src="banners/pizza03.jpg" alt="Uma pizza"></div>
+        <div> <img src="banners/pizza04.jpg" alt="Uma pizza"></div>
+        <div> <img src="banners/pizza05.jpg" alt="Uma pizza"></div>
+        <div> <img src="banners/pizza06.jpg" alt="Uma pizza"></div>
+        <div> <img src="banners/pizza07.jpg" alt="Uma pizza"></div>
+
     </div>
     <main>
         <h3 class="titulo-principal">A melhor pizza da região!</h3>
-        <div>
-            <img src="imagens/calabreza.jpg" alt="Calabresa">
-            <img src="imagens/portuguesa.jpg" alt="Portuguesa">
-            <img src="imagens/siciliana.jpg" alt="Siciliana">
-            <img src="imagens/pizza01.jpg" alt="Pizza01">
-            <img src="imagens/pizza02.jpg" alt="Pizza02">
-            <img src="imagens/pizza03.jpg" alt="Pizza03">
-            <img src="imagens/pizza04.jpg" alt="Pizza04">
-            <img src="imagens/pizza05.jpg" alt="Pizza05">
-            
-            <img src="imagens/pizza07.jpg" alt="Pizza07">
+        <div id="mygallery">
+            <div class="galeria">
+                <img src="imagens/calabreza.jpg" alt="Calabresa" >
+                <img src="imagens/portuguesa.jpg" alt="Portuguesa" >
+                <img src="imagens/siciliana.jpg" alt="Siciliana"  >
+            </div>
+
+            <div class="galeria">
+                 <img src="imagens/pizza01.jpg" alt="Pizza01"  >
+                <img src="imagens/pizza02.jpg" alt="Pizza02" >
+                <img src="imagens/pizza03.jpg" alt="Pizza03">
+            </div>
+            <br>
+
+            <div class="galeria">
+                <img src="imagens/pizza04.jpg" alt="Pizza04" >
+                <img src="imagens/pizza05.jpg" alt="Pizza05">
+                <img src="imagens/pizza07.jpg" alt="Pizza07" >
+            </div>
+            <div class="galeria">
+                <img src="imagens/pizza03.jpg" alt="Pizza04" >
+                <img src="imagens/portuguesa.jpg" alt="Pizza05">
+                <img src="imagens/pizza07.jpg" alt="Pizza07" >
+            </div>
+
+
         </div>
 
         <div class="nossos-sabores">
@@ -77,6 +103,34 @@
     <footer>
         <p>Aula do Senac. Declaração de direitos autorais.</p>
     </footer>
+
+    <script src="jquery-1.11.0.min.js"></script>
+    <script src="slick-1.8.1/slick/slick.js"></script>
+    <script src="justifiedGallery.min/jquery.justifiedGallery.min.js"></script>
+
+    <script>
+
+        $('.galeria').slick({
+            infinte: true,
+            slidesToShow: 2,
+            slidesToScroll: 1
+
+        })
+
+        $('.banner').slick({
+            autoplay: true,
+            arrows: false,
+            autoplaySpeed: 2000
+        })
+
+        $('#mygallery').justifiedGallery()
+
+
+
+
+
+
+    </script>
 </body>
 
 </html>
